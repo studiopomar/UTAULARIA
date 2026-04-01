@@ -13,7 +13,7 @@ fn main() -> Result<(), eframe::Error> {
     };
     
     eframe::run_native(
-        "UTAULARIA - Lojinha de Voicebanks",
+        "UTAULARIA",
         options,
         Box::new(|cc| Ok(Box::new(UtaulariaApp::new(cc)))),
     )

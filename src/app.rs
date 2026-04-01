@@ -13,6 +13,7 @@ impl Default for UtaulariaApp {
         Self {
             voicebanks: Vec::new(),
             selected_index: None,
+            validation_report: String::new(),
         }
     }
 }
