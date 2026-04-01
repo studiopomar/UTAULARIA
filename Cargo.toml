@@ -12,3 +12,4 @@ egui_extras = { version = "0.31", features = ["all_loaders"] }
 image = { version = "0.25", features = ["default", "webp"] }
 rfd = "0.15"
 anyhow = "1.0"
+webbrowser = "1.2.0"

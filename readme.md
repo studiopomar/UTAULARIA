@@ -54,41 +54,5 @@ Toda contribuição será devidamente creditada.
 
 | Nome | Criador | Tipo | Idioma | Download |
 |------|---------|------|--------|----------|
-| *VIICTOR* | *xiao* | *VCCV* | *Português* | *Em breve* |
-| *YOHJI* | *Oneno* | *VCV* | *Japonês* | *Em breve* |
-
-*A lista será preenchida conforme os voicebanks forem adicionados ao acervo.*
-
----
-
-## Critérios de Inclusão
-
-Para que um voicebank seja incluído na UTAULARIA, ele deve:
-
-- Gravação e configuração completo de um voicebank em Português.
-- Estar disponível para download (gratuito ou com autorização do criador).
-- Possuir documentação explícita sobre uso e creditamento.
-- Ser original (não cópias ou versões não autorizadas de outros voicebanks).
-
-## Há também critérios de retirada e não inserção, como
-
-- Link de download se tornar indisponível.
-- Houver denúncia comprovada de violação de direitos (sejam autorais ou demais direitos).
-- O criador solicitar a remoção de forma direta ao administrador oficial da UTAULARIA.
-- Identificação de informação falsa ou enganosa na listagem.
-
----
-
-## Links Úteis
-
-- [UTAU Software Oficial](http://utau2008.xrea.jp/)
-
----
-
-## Licença
-
-Os voicebanks listados neste repositório pertencem a seus respectivos criadores. Cada banco de voz possui sua própria licença de uso. Respeite os termos definidos por cada artista.
-
-Este repositório como projeto organizador está sob licença MIT, permitindo uso e adaptação com os devidos créditos.
-
----
+| *-mocaccino-* | *xiao* | *VCV Rentan* | *Japonês* | *[Download]([Google Drive](https://drive.google.com/file/d/16OK5jze8wf1oWu5TywCAYk369OVWTyiq/view?usp=sharing))* |
+| *YOHJI* | ** | ** | ** | *[Download]()* |

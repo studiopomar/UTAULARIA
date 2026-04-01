@@ -4154,6 +4154,7 @@ dependencies = [
  "rfd",
  "serde",
  "serde_yaml",
+ "webbrowser",
 ]
 
 [[package]]
