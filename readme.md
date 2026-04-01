@@ -1,7 +1,7 @@
-# UTAULARIA
+# UTAULARIA (Em progresso)
 
 Galeria colaborativa de voicebanks UTAU criados por artistas brasileiros. Um espaço para descobrir, baixar e celebrar a produção nacional e/ou lusófona de voicebanks.
-
+> Por favor, leve em consideração que quem iniciou este repositório (xiao) está fazendo tudo sozinho, tendo isso em mente saiba que nas versões iniciais não haverão TODOS os voicebanks e o software pode conter falhas.
 ---
 
 ## Sobre o Projeto
@@ -38,6 +38,7 @@ Toda contribuição será devidamente creditada.
 
 | Nome | Criador | Tipo | Idioma | Download |
 |------|---------|------|--------|----------|
+| *VIICTOR* | *xiao* | *VCCV* | *Português* | *Em breve* |
 | *YOHJI* | *Oneno* | *VCV* | *Japonês* | *Em breve* |
 
 *A lista será preenchida conforme os voicebanks forem adicionados ao acervo.*
@@ -48,12 +49,12 @@ Toda contribuição será devidamente creditada.
 
 Para que um voicebank seja incluído na UTAULARIA, ele deve:
 
-- Gravação e configuração completo de um voicebank em Português. 
+- Gravação e configuração completo de um voicebank em Português.
 - Estar disponível para download (gratuito ou com autorização do criador).
 - Possuir documentação explícita sobre uso e creditamento.
 - Ser original (não cópias ou versões não autorizadas de outros voicebanks).
 
-## Há também critérios de retirada e não inserção, como:
+## Há também critérios de retirada e não inserção, como
 
 - Link de download se tornar indisponível.
 - Houver denúncia comprovada de violação de direitos (sejam autorais ou demais direitos).

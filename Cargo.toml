@@ -1,0 +1,12 @@
+[package]
+name = "utaularia"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.31", features = ["default", "persistence"] }
+egui = { version = "0.31", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9" # Note: serde_yaml is officially unmaintained, but good for simple tasks.
+rfd = "0.15"
+anyhow = "1.0"
