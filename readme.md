@@ -1,7 +1,7 @@
-# UTAULARIA
+# UTAULARIA (Em progresso)
 
 Galeria colaborativa de voicebanks UTAU criados por artistas brasileiros. Um espaço para descobrir, baixar e celebrar a produção nacional e/ou lusófona de voicebanks.
-
+> Por favor, leve em consideração que quem iniciou este repositório (xiao) está fazendo tudo sozinho, tendo isso em mente saiba que nas versões iniciais não haverão TODOS os voicebanks e o software pode conter falhas.
 ---
 
 ## Sobre o Projeto
