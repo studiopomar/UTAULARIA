@@ -1,3 +1,19 @@
+[![Status: Em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/studiopomar/utaularia)
+[![MVP: v1](https://img.shields.io/badge/MVP-v1-blue)](https://github.com/storiopomar/utaularia)
+[![Linguagem: Rust](https://img.shields.io/badge/Linguagem-Rust-orange)](https://www.rust-lang.org/)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6)](https://www.microsoft.com/windows)
+[![Platform: Linux](https://img.shields.io/badge/Platform-Linux-FCC624)](https://www.linux.org/)
+[![Platform: macOS](https://img.shields.io/badge/Platform-macOS-999999)](https://www.apple.com/macos)
+[![Contribuições: Bem-vindas](https://img.shields.io/badge/Contribuições-Bem--vindas-brightgreen)](https://github.com/studiopomar/utaularia/blob/main/CONTRIBUTING.md)
+[![PRs: Aceitos](https://img.shields.io/badge/PRs-Aceitos-brightgreen)](https://github.com/studiopomar/utaularia/pulls)
+[![Issues: Abertas](https://img.shields.io/badge/Issues-Abertas-green)](https://github.com/studiopomar/utaularia/issues)
+[![Documentação: WIP](https://img.shields.io/badge/Documentação-WIP-yellow)](https://github.com/studiopomar/utaularia)
+[![Testes: Pendentes](https://img.shields.io/badge/Testes-Pendentes-red)](https://github.com/studiopomar/utaularia)
+[![Cobertura: 0%](https://img.shields.io/badge/Cobertura-0%25-red)](https://github.com/studiopomar/utaularia)
+[![Licença: MIT](https://img.shields.io/badge/Licença-MIT-purple)](https://opensource.org/licenses/MIT)
+[![Criador: xiao](https://img.shields.io/badge/Criador-xiao-ff69b4)](https://www.youtube.com/@xiaopng)
+[![Studio: POMAR](https://img.shields.io/badge/Studio-POMAR-ff69b4)](https://github.com/studiopomar)
+
 # UTAULARIA (Em progresso)
 
 Galeria colaborativa de voicebanks UTAU criados por artistas brasileiros. Um espaço para descobrir, baixar e celebrar a produção nacional e/ou lusófona de voicebanks.
