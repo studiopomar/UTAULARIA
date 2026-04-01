@@ -8,6 +8,8 @@ pub struct Voicebank {
     pub language: String,
     pub download_link: String,
     pub description: String,
+    pub image_path: String,
+    pub folder_name: String,
 }
 
 impl Voicebank {

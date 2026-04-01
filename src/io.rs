@@ -2,21 +2,72 @@ use std::fs;
 use crate::voicebank::Voicebank;
 use anyhow::Result;
 
-pub const DATA_PATH: &str = "voicebanks.yaml";
+pub const ASSETS_DIR: &str = "voicebank_assets";
 pub const README_PATH: &str = "readme.md";
 
-pub fn load_voicebanks() -> Vec<Voicebank> {
-    if let Ok(content) = fs::read_to_string(DATA_PATH) {
-        if let Ok(vbs) = serde_yaml::from_str(&content) {
-            return vbs;
+fn parse_config(content: &str, folder_name: String) -> Voicebank {
+    let mut vb = Voicebank {
+        folder_name,
+        ..Voicebank::new()
+    };
+
+    for line in content.lines() {
+        if let Some((key, value)) = line.split_once(':') {
+            let value = value.trim().to_string();
+            match key.trim() {
+                "nome_do_vb" => vb.name = value,
+                "link_do_vb" => vb.download_link = value,
+                "design_do_vb" => vb.image_path = value,
+                "criador_do_vb" => vb.creator = value,
+                "metodo_do_vb" => vb.bank_type = value,
+                "idioma_do_vb" => vb.language = value,
+                _ => {}
+            }
         }
     }
-    Vec::new()
+    vb
+}
+
+fn serialize_config(vb: &Voicebank) -> String {
+    format!(
+        "nome_do_vb: {}\nlink_do_vb: {}\ndesign_do_vb: {}\ncriador_do_vb: {}\nmetodo_do_vb: {}\nidioma_do_vb: {}",
+        vb.name, vb.download_link, vb.image_path, vb.creator, vb.bank_type, vb.language
+    )
+}
+
+pub fn load_voicebanks() -> Vec<Voicebank> {
+    let mut vbs = Vec::new();
+    if let Ok(entries) = fs::read_dir(ASSETS_DIR) {
+        for entry in entries.filter_map(|e| e.ok()) {
+            if entry.path().is_dir() {
+                let folder_name = entry.file_name().to_string_lossy().to_string();
+                let config_path = entry.path().join("config.txt");
+                if let Ok(content) = fs::read_to_string(config_path) {
+                    vbs.push(parse_config(&content, folder_name));
+                } else {
+                    // Se não tiver config, cria um vazio com o nome da pasta
+                    vbs.push(Voicebank {
+                        name: folder_name.clone(),
+                        folder_name,
+                        ..Voicebank::new()
+                    });
+                }
+            }
+        }
+    }
+    vbs
 }
 
 pub fn save_voicebanks(vbs: &[Voicebank]) -> Result<()> {
-    let content = serde_yaml::to_string(vbs)?;
-    fs::write(DATA_PATH, content)?;
+    for vb in vbs {
+        let folder_path = std::path::Path::new(ASSETS_DIR).join(&vb.folder_name);
+        if !folder_path.exists() {
+            fs::create_dir_all(&folder_path)?;
+        }
+        let config_path = folder_path.join("config.txt");
+        let content = serialize_config(vb);
+        fs::write(config_path, content)?;
+    }
     Ok(())
 }
 
@@ -47,6 +98,21 @@ pub fn update_readme(vbs: &[Voicebank]) -> Result<()> {
     }
 
     Ok(())
+}
+
+pub fn sync_with_github() -> Result<String> {
+    use std::process::Command;
+    
+    let output = Command::new("git")
+        .args(["pull", "origin", "main"])
+        .output()?;
+        
+    if output.status.success() {
+        Ok("Sincronização concluída com sucesso!".to_string())
+    } else {
+        let error = String::from_utf8_lossy(&output.stderr).to_string();
+        Err(anyhow::anyhow!("Erro na sincronização: {}", error))
+    }
 }
 
 pub fn validate_voicebank(path: &std::path::Path) -> Result<String> {
