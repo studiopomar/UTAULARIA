@@ -82,8 +82,6 @@ Para que um voicebank seja incluído na UTAULARIA, ele deve:
 ## Links Úteis
 
 - [UTAU Software Oficial](http://utau2008.xrea.jp/)
-- [Comunidade UTAU Brasil](link da comunidade)
-- [Documentação para Criadores](link da documentação)
 
 ---
 
