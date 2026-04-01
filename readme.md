@@ -38,7 +38,7 @@ Toda contribuição será devidamente creditada.
 
 | Nome | Criador | Tipo | Idioma | Download |
 |------|---------|------|--------|----------|
-| *Em breve* | *Em breve* | *Em breve* | *Em breve* | *Em breve* |
+| *YOHJI* | *Oneno* | *VCV* | *Japonês* | *Em breve* |
 
 *A lista será preenchida conforme os voicebanks forem adicionados ao acervo.*
 
