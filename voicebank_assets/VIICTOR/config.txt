@@ -1,5 +1,5 @@
 nome_do_vb: -mocaccino-
-link_do_vb: [Google Drive](https://drive.google.com/file/d/16OK5jze8wf1oWu5TywCAYk369OVWTyiq/view?usp=sharing)
+link_do_vb: https://drive.google.com/file/d/16OK5jze8wf1oWu5TywCAYk369OVWTyiq/view?usp=sharing
 design_do_vb: voicebank_assets/viictorvccvbrapa.webp
 criador_do_vb: xiao
 metodo_do_vb: VCV Rentan
